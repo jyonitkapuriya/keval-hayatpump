@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83.497" height="83.497" viewBox="0 0 83.497 83.497">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#14aad5"/>
+      <stop offset="1" stop-color="#38b6bf"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2728" data-name="Group 2728" transform="translate(2286.092 -6780.743)">
+    <path id="Path_4026" data-name="Path 4026" d="M2326.229,3989.388a41.749,41.749,0,1,0,41.748-41.749,41.748,41.748,0,0,0-41.748,41.749" transform="translate(-4612.321 2833.104)" fill="url(#linear-gradient)"/>
+    <path id="Path_4027" data-name="Path 4027" d="M2383.518,3990.1l-7.77-7.77-7.058,7.058,7.058,7.058.712.712,7.058,7.058,7.058-7.058Z" transform="translate(-4612.321 2833.104)" fill="#fff"/>
+    <path id="Path_4028" data-name="Path 4028" d="M2352.438,3988.676l7.77,7.77,7.058-7.058-7.058-7.058-.712-.712-7.058-7.057-7.058,7.057Z" transform="translate(-4612.321 2833.104)" fill="#fff"/>
+    <rect id="Rectangle_192" data-name="Rectangle 192" width="9.981" height="9.981" transform="translate(-2243.631 6838.032) rotate(-45)" fill="#fff"/>
+    <rect id="Rectangle_193" data-name="Rectangle 193" width="9.981" height="9.981" transform="translate(-2235.861 6814.722) rotate(-45)" fill="#fff"/>
+    <path id="Path_4029" data-name="Path 4029" d="M2353.15,4004.928l7.058-7.058.712-.712,7.058-7.058,7.057,7.058-7.77,7.77-7.057,7.058Z" transform="translate(-4612.321 2833.104)" fill="#fff"/>
+    <rect id="Rectangle_194" data-name="Rectangle 194" width="9.982" height="9.982" transform="translate(-2259.171 6806.952) rotate(-45)" fill="#fff"/>
+    <path id="Path_4030" data-name="Path 4030" d="M2382.805,3973.848l-7.058,7.058-.712.712-7.058,7.058-7.057-7.058,7.77-7.77,7.057-7.058Z" transform="translate(-4612.321 2833.104)" fill="#fff"/>
+    <rect id="Rectangle_195" data-name="Rectangle 195" width="9.982" height="9.982" transform="translate(-2266.942 6830.262) rotate(-45)" fill="#fff"/>
+  </g>
+</svg>

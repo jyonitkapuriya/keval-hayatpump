@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.14" height="75.14" viewBox="0 0 75.14 75.14">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#14aad5"/>
+      <stop offset="1" stop-color="#38b6bf"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2714" data-name="Group 2714" transform="translate(-2058 -9936)">
+    <path id="Path_9112" data-name="Path 9112" d="M2074.8,126.767A37.57,37.57,0,1,0,2112.371,89.2a37.569,37.569,0,0,0-37.569,37.571" transform="translate(-16.802 9846.804)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_2257" data-name="Rectangle 2257" width="19.538" height="2.16" transform="translate(2089.021 9962.248)" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="Rectangle_2258" data-name="Rectangle 2258" width="19.538" height="2.161" transform="translate(2089.021 9966.264)" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="Rectangle_2259" data-name="Rectangle 2259" width="19.538" height="2.161" transform="translate(2089.021 9970.277)" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="Rectangle_2260" data-name="Rectangle 2260" width="19.538" height="2.16" transform="translate(2089.021 9974.293)" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="Rectangle_2261" data-name="Rectangle 2261" width="19.538" height="2.16" transform="translate(2089.021 9978.309)" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="Rectangle_2262" data-name="Rectangle 2262" width="19.538" height="2.16" transform="translate(2089.021 9982.322)" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path id="Path_9113" data-name="Path 9113" d="M2127.94,115.4h2.138a2.486,2.486,0,0,1,2.479,2.478v17.774a2.486,2.486,0,0,1-2.479,2.477h-2.138Zm-23.927,0h-2.138a2.485,2.485,0,0,0-2.479,2.478v17.774a2.485,2.485,0,0,0,2.479,2.477h2.138Zm-11.826,8.653h3.55V125.3h1.143v2.94h-1.143v1.243h-3.55Z" transform="translate(-17.187 9846.6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
