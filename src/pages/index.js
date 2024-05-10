@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </div> */}
       <main className="no-scrollbar expert overflow-scroll ">
-        <div class=" h-screen relative no-scrollbar overflow-scroll ">
+        <div class=" h-screen w-full relative no-scrollbar overflow-scroll ">
           {/* <ScrollAnimation animateIn="fadeIn"> */}
           <Navbar />
           <Hero />

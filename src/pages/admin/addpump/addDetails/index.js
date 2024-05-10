@@ -70,33 +70,35 @@ const AddDetails = () => {
     console.log("specificationImg", specificationImg)
 
     const addSpecification = async () => {
-        const urls = await Promise.all(allDetails.map(async (item, index) => {
-            if (item.image) {
-                const uploadImage = await uploadPumpImage(item.image, item.image?.name);
-                return uploadImage;
-            } else if (item) {
-                return item
-            } else {
-                return ""
-            }
-        }));
-        if (urls.length) {
-            await addProductSpecification(id, { images: urls })
-        }
+        // const urls = await Promise.all(allDetails.map(async (item, index) => {
+        //     if (item.image) {
+        //         const uploadImage = await uploadPumpImage(item.image, item.image?.name);
+        //         return uploadImage;
+        //     } else if (item) {
+        //         return item
+        //     } else {
+        //         return ""
+        //     }
+        // }));
+        // if (urls.length) {
+        //     await addProductSpecification(id, { images: urls })
+        // }
         if (productImg !== "" && productImg?.name) {
             let productImgURL = await uploadPumpImage(productImg, productImg?.name)
             await addProductSpecification(id, { productImageURL: productImgURL })
         }
-        if (specificationImg !== "" && specificationImg?.name) {
-            let specificationImgURL = await uploadPumpImage(specificationImg)
-            await addProductSpecification(id, { specificationImgURL: specificationImgURL ? specificationImgURL : specificationImg })
-        }
+        // if (specificationImg !== "" && specificationImg?.name) {
+        //     let specificationImgURL = await uploadPumpImage(specificationImg)
+        //     await addProductSpecification(id, { specificationImgURL: specificationImgURL ? specificationImgURL : specificationImg })
+        // }
         if (productImg === "") {
             await addProductSpecification(id, { productImageURL: "" })
         }
-        if (specificationImg === "") {
-            await addProductSpecification(id, { specificationImgURL: "" })
-        }
+        // if (specificationImg === "") {
+        //     await addProductSpecification(id, { specificationImgURL: "" })
+        // }
+        console.log("Features", Features)
+        await addProductSpecification(id, { feature: Features })
         getPumpDetails()
         toast.success("Product updated successfully")
 

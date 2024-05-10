@@ -5,10 +5,12 @@ import Navbar from "@/component/navbar"
 
 const Contect = () => {
     return (
-        <div>
-            <Navbar />
-            <ContactForm />
-            <Footer />
+        <div className="expert h-screen overflow-scroll no-scrollbar">
+            <div className="relative">
+                <Navbar />
+                <ContactForm />
+                <Footer />
+            </div>
         </div>
     )
 }
