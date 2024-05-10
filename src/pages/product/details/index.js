@@ -53,7 +53,7 @@ const PumpDetails = () => {
                         {pumpData?.productImageURL && <div className="col-span-2 md:col-span-1 rounded-lg shadow-md"><Image src={pumpData?.productImageURL} width={200} height={200} className="w-full  max-h-[500px] h-full" /></div>}
                         {/* {pumpData?.specificationImgURL && <Image src={pumpData?.specificationImgURL} width={200} height={200} className="w-full max-h-[500px] h-full" />} */}
                         <div className="p-4 rounded-lg border border-opacity-50 border-solid border-blue-500 bg-blue-50 shadow-md col-span-2 md:col-span-1">
-                            <div className="flex gap-x-1 text-xs flex-wrap text-gray-700 font-sans font-medium ">{feature.map((item) => {
+                            <div className="flex gap-x-1 text-xs flex-wrap text-gray-700 font-sans font-medium  border-b border-solid border-gray-500 border-opacity-50 ">{feature.map((item) => {
                                 return (
                                     <div className={`cursor-pointer hover:text-white hover:bg-blue-400 p-1 rounded-md duration-300 ${selectedFeature === item.key ? "bg-blue-400 text-white" : ""}`}
                                         onClick={() => setSelectedFeature(item.key)} >
@@ -61,9 +61,9 @@ const PumpDetails = () => {
                                     </div>
                                 )
                             })}</div>
-                            <div dangerouslySetInnerHTML={{ __html: pumpData.feature[selectedFeature] }} className="mt-1  border-t border-solid border-gray-500 border-opacity-50 pt-2 md:text-xs text-sm text-gray-500 font-sans font-normal" >
+                            {pumpData?.feature?.[selectedFeature] && <div dangerouslySetInnerHTML={{ __html: pumpData?.feature[selectedFeature] }} className="mt-1  pt-2 md:text-xs text-sm text-gray-500 font-sans font-normal" >
                                 {/* {pumpData.feature[selectedFeature]} */}
-                            </div>
+                            </div>}
                         </div>
                     </div>
                     {/* <div className="pt-8 gap-5 flex flex-col bg-white justify-center items-center">
