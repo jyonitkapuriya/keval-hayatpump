@@ -59,8 +59,8 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section className="px-8 ">
-      <div className="container mx-auto mb-20 text-center">
+    <section className="px-8">
+      <div className="container mx-auto py-20 text-center  border-t border-solid border-gray-700 border-opacity-35">
         {/* <Typography color="blue-gray" className="mb-2 font-bold uppercase">
           my skills
         </Typography> */}

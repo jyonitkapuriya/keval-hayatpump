@@ -46,7 +46,7 @@ const PROJECTS = [
 export function Projects() {
   return (
     <section className="py-28 px-8 " style={{ backgroundImage: "url('/images/water.gif')" }}>
-      <div className="container mx-auto mb-20 text-center">
+      <div className="container mx-auto py-20 text-center   border-t border-solid border-gray-700 border-opacity-35">
         <div className="mb-8 animate-pulse lg:text-8xl text-5xl  font-sans font-semibold" style={{ color: '#07aadb' }}>
           Product Range
         </div>
@@ -59,7 +59,7 @@ export function Projects() {
           dreams into reality.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-1 w-fit gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
         {PROJECTS.map((props, idx) => (
           <div key={idx} className="border-2 border-solid border-blue-400 p-8 rounded-lg shadow-xl cardBox">
             <ProjectCard key={idx} {...props} />

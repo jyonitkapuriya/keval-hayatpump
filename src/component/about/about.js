@@ -7,8 +7,8 @@ import { useFirebase } from '@/firebase/firebase';
 const AboutPage = () => {
 
     return (
-        <div className="container mx-auto py-8 w-full h-[calc(100vh-20px)] max-w-7xl p-8 pt-20">
-            <Typography variant="body" color="blue-gray" className="text-4xl font-bold mb-6">
+        <div className="container mx-auto py-8 w-full  max-w-7xl p-8 pt-20 ">
+            <Typography variant="body" color="blue-gray" className="text-4xl font-bold mb-6 text-[#07aadb]">
                 About Us
             </Typography>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

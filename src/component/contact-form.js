@@ -48,8 +48,8 @@ export function ContactForm() {
 
   }
   return (
-    <section className="px-8 py-16 ">
-      <div className="container mx-auto mb-20 text-center">
+    <section className="py-20 max-w-7xl mx-auto md:px-8 sm:px-6 px-4">
+      <div className="container mx-auto py-20 text-center  border-t border-solid border-gray-700 border-opacity-35">
         <div className="mb-8 animate-pulse lg:text-8xl text-5xl  font-sans font-semibold" style={{ color: '#07aadb' }}>
           Contact Us
         </div>

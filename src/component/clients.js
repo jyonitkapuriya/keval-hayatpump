@@ -14,8 +14,8 @@ import { Expertise } from './ExpertisedData/Expertise'
 
 export function Clients() {
   return (
-    <div className="px-8 py-20 ">
-      <div className="container mx-auto text-center">
+    <div className="px-8 ">
+      <div className="container mx-auto py-20 text-center border-t border-solid border-gray-700 border-opacity-35">
         <div className="mb-4 animate-pulse lg:text-8xl text-5xl  font-sans font-semibold" style={{ color: '#07aadb' }}>
           Expertise
         </div>

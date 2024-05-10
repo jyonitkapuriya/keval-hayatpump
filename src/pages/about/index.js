@@ -6,12 +6,12 @@ const LeafletMap = dynamic(() => import('@/component/map'), { ssr: false })
 
 const AboutUs = () => {
     return (
-        <>
+        <div className="expert h-screen overflow-scroll no-scrollbar">
             <Navbar />
             <AboutPage />
             <LeafletMap />
             <Footer />
-        </>
+        </div>
     )
 }
 export default AboutUs
