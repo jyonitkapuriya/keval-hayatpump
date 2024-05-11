@@ -83,8 +83,8 @@ export function Navbar() {
 
 
   return (
-    <header className='border-b fixed w-full font-[sans-serif] z-10 bg-opacity-30 top-0'>
-      <div className={`  items-center px-10 py-4 relative bg-white min-h-[60px] ${open ? "hidden" : "flex flex-wrap"}`}>
+    <header className='border-b fixed w-full font-[sans-serif] z-10  backdrop-blur-lg  bg-white bg-opacity-50 top-0'>
+      <div className={`  items-center px-10 py-4 relative  min-h-[60px] ${open ? "hidden" : "flex flex-wrap"}`}>
         <Link href='/' className='hidden max-lg:block'><Image src={Logo}
           alt="logo" className='w-28' /></Link>
         <div className='flex ml-auto lg:order-1 lg:hidden'>
