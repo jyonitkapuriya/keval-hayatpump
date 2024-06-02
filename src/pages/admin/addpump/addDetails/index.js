@@ -236,7 +236,7 @@ const AddDetails = () => {
                                 </>
                             )
                         })}
-                        {allDetails?.map((item, index) => <div className="flex mt-3">
+                        {/* {allDetails?.map((item, index) => <div className="flex mt-3">
                             {item === "" ? (
                                 <div className="text-center w-full">
                                     <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
@@ -260,13 +260,13 @@ const AddDetails = () => {
                                 data.splice(index, 1)
                                 setAllDetails(data)
                             }} />
-                        </div>)}
+                        </div>)} */}
 
-                        <button className="bg-black p-4 rounded-md text-white mt-10 " onClick={() => {
+                        {/* <button className="bg-black p-4 rounded-md text-white mt-10 " onClick={() => {
                             const data = [...allDetails]
                             data.push("")
                             setAllDetails(data)
-                        }}>Add more Image</button>
+                        }}>Add more Image</button> */}
                         <button className="bg-black p-4 rounded-md text-white mt-10 ml-4" onClick={() => addSpecification()}>Save</button>
                     </div>
                     <div className="mb-20 px-8">

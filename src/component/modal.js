@@ -82,7 +82,7 @@ export default function Modal({ open, setOpen, products }) {
                                                                 >
                                                                     <Dialog.Panel className="relative transform overflow-hidden mt-[127px] rounded-lg bg-white text-left shadow-xl transition-all  w-full ">
                                                                         {/* <X className='text-black absolute ml-auto right-4 top-4' onClick={() => setOpenProduct(false)} /> */}
-                                                                        <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                                                                        <div className="bg-white px-4 pb-4 pt-5 whitespace-nowrap sm:p-6 sm:pb-4">
                                                                             <ul className='lg:space-x-8 max-lg:space-y-2'>
                                                                                 {products.map((item) =>
                                                                                     <li className='max-lg:border-b max-lg:py-2'>

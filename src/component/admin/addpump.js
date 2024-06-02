@@ -91,7 +91,7 @@ const AddPump = () => {
                     <Image src={image?.url ? image?.url : URL.createObjectURL(image)} alt="Selected Image" width={200} height={200} className='h-40 w-40' />
                 )}
                 {image &&
-                    <button className=" bg-black aboslute ml-auto md:w-fit mt-5 h-12 w-fit px-4 text-sm rounded-lg" onClick={() => setImage(null)}>
+                    <button className=" bg-black aboslute ml-auto md:w-fit mt-5 h-12 w-fit px-4 text-sm rounded-lg text-white" onClick={() => setImage(null)}>
                         Delate selected image
                     </button>
                 }

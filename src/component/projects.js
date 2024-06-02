@@ -7,7 +7,9 @@ import Pupm2 from '../images/pums/newMotors.png'
 import Pupm3 from '../images/pums/solar-pump.png'
 import Pupm4 from '../images/pums/HorizontalPump.png'
 import Pupm5 from '../images/pums/UPVC.png'
+import banner from '../images/pums/bgtest.png'
 import bgImage from '../images/water.gif'
+import Image from "next/image";
 
 const PROJECTS = [
   {
@@ -45,28 +47,33 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section className="py-28 px-8 " style={{ backgroundImage: "url('/images/water.gif')" }}>
-      <div className="container mx-auto py-20 text-center   border-t border-solid border-gray-700 border-opacity-35">
-        <div className="mb-8 animate-pulse lg:text-8xl text-5xl  font-sans font-semibold" style={{ color: '#07aadb' }}>
-          Product Range
-        </div>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
-        >
-          Whether you have a mobile app idea that needs to come to life or a
-          website that requires a facelift, I&apos;m here to turn your digital
-          dreams into reality.
-        </Typography>
-      </div>
-      <div className="container mx-auto grid grid-cols-1 w-fit gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
-        {PROJECTS.map((props, idx) => (
-          <div key={idx} className="border-2 border-solid border-blue-400 p-8 rounded-lg shadow-xl cardBox">
-            <ProjectCard key={idx} {...props} />
+    <>
+      <section className="py-28 px-8 " style={{ backgroundImage: "url('/images/water.gif')" }}>
+        <div className="container mx-auto py-20 text-center   border-t border-solid border-gray-700 border-opacity-35">
+          <div className="mb-8 animate-pulse lg:text-8xl text-5xl  font-sans font-semibold" style={{ color: '#07aadb' }}>
+            Product Range
           </div>
-        ))}
+          <Typography
+            variant="lead"
+            className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
+          >
+            Whether you have a mobile app idea that needs to come to life or a
+            website that requires a facelift, I&apos;m here to turn your digital
+            dreams into reality.
+          </Typography>
+        </div>
+        <div className="container mx-auto grid grid-cols-1 w-fit gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
+          {PROJECTS.map((props, idx) => (
+            <div key={idx} className="border-2 border-solid border-blue-400 p-8 rounded-lg shadow-xl cardBox">
+              <ProjectCard key={idx} {...props} />
+            </div>
+          ))}
+        </div>
+      </section>
+      <div className=" w-full">
+        <Image src={banner} className="max-h-full w-full" />
       </div>
-    </section>
+    </>
   );
 }
 
