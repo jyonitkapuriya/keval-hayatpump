@@ -63,10 +63,10 @@ export const Expertise = [
         icon: USE_IN_TILES,
         name: 'USE IN TILES & MARBLE PLANT',
     },
-    {
-        icon: MUD_APPLICATION,
-        name: 'USE IN MUD APPLICATION',
-    },
+    // {
+    //     icon: MUD_APPLICATION,
+    //     name: 'USE IN MUD APPLICATION',
+    // },
     {
         icon: ENGINE_COUPLE,
         name: 'ENGINE COUPLE',

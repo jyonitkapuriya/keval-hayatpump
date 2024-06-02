@@ -146,7 +146,7 @@ export function Navbar() {
                               {products.map((item) =>
                                 <li className='text-start'>
                                   <Link href={`/product/details?id=${item.id}`}
-                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
+                                    className='hover:text-[#007bff] font-semibold  whitespace-nowrap  text-[#333] block text-[15px]'>
                                     {item.name}
                                   </Link>
                                 </li>)}
