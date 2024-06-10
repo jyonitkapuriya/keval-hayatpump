@@ -49,10 +49,10 @@ const PumpDetails = () => {
             <div className="expert overflow-scroll no-scrollbar h-screen w-full lg:px-0 ">
                 <div className="relative">
                     <Navbar />
-                    <div className="grid grid-cols-2 gap-5 max-w-7xl  px-8 mx-auto mt-40 mb-20">
-                        {pumpData?.productImageURL && <div className="col-span-2 md:col-span-1 rounded-lg shadow-md"><Image src={pumpData?.productImageURL} width={200} height={200} className="w-full rounded-lg  max-h-[500px] h-full border-2 border-solid border-blue-400 " /></div>}
+                    <div className=" gap-5 max-w-7xl  px-8 mx-auto mt-40 mb-20 flex  justify-center flex-wrap">
+                        {pumpData?.productImageURL && <div className=" rounded-lg shadow-md"><Image src={pumpData?.productImageURL} width={200} height={200} className="w-auto rounded-lg  max-h-[500px] h-full border-2 border-solid border-blue-400 " /></div>}
                         {/* {pumpData?.specificationImgURL && <Image src={pumpData?.specificationImgURL} width={200} height={200} className="w-full max-h-[500px] h-full" />} */}
-                        <div className="p-4 rounded-lg border-2  border-solid border-blue-400 bg-blue-50 shadow-md col-span-2 md:col-span-1">
+                        <div className="p-4 rounded-lg border-2  border-solid border-blue-400 bg-blue-50 shadow-md col-span-2 md:col-span-1 h-full">
                             <div className="flex gap-x-1 text-xs flex-wrap text-gray-700 font-sans font-medium  border-b border-solid border-gray-500 border-opacity-50 ">{feature.map((item) => {
                                 return (
                                     <div className={`cursor-pointer hover:text-white hover:bg-blue-400 p-1 rounded-md duration-300 ${selectedFeature === item.key ? "bg-blue-400 text-white" : ""}`}
