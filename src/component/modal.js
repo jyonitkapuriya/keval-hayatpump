@@ -41,7 +41,9 @@ export default function Modal({ open, setOpen, products }) {
                                         <ul className='lg:space-x-8 max-lg:space-y-2'>
                                             <li className='max-lg:border-b max-lg:py-2'>
                                                 <Link href={'/'}
-                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
+                                                    onClick={() => setOpen(!open)}
+                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'
+                                                >
                                                     Home
                                                 </Link>
                                             </li>
@@ -87,6 +89,10 @@ export default function Modal({ open, setOpen, products }) {
                                                                                 {products.map((item) =>
                                                                                     <li className='max-lg:border-b max-lg:py-2'>
                                                                                         <Link href={`/product/details?id=${item.id}`}
+                                                                                            onClick={() => {
+                                                                                                setOpen(!open)
+                                                                                                setOpenProduct(!openProduct)
+                                                                                            }}
                                                                                             className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
                                                                                             {item.name}
                                                                                         </Link>
@@ -101,8 +107,10 @@ export default function Modal({ open, setOpen, products }) {
                                                 </Transition.Root>
                                             </li>
                                             <li className='max-lg:border-b max-lg:py-2'>
-                                                <Link href={'/'}
-                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
+                                                <Link href={'/certification'}
+                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'
+                                                    onClick={() => setOpen(!open)}
+                                                >
                                                     Certification
                                                 </Link>
                                             </li>
@@ -111,19 +119,26 @@ export default function Modal({ open, setOpen, products }) {
                                         <ul className='lg:flex lg:space-x-8 max-lg:space-y-2 ml-auto'>
                                             <li className='max-lg:border-b max-lg:py-2'>
                                                 <Link href='/about'
-                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
+                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'
+                                                    onClick={() => setOpen(!open)}
+                                                >
                                                     About
                                                 </Link>
                                             </li>
                                             <li className='max-lg:border-b max-lg:py-2'>
                                                 <Link href='/contect'
-                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
+                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'
+                                                    onClick={() => setOpen(!open)}
+
+                                                >
                                                     Contact
                                                 </Link>
                                             </li>
                                             <li className='max-lg:border-b max-lg:py-2'>
-                                                <Link href='/'
-                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
+                                                <Link href='/gallery'
+                                                    className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'
+                                                    onClick={() => setOpen(!open)}
+                                                >
                                                     Gallery
                                                 </Link>
                                             </li>

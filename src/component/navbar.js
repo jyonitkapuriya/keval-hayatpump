@@ -192,7 +192,7 @@ export function Navbar() {
           </ul>
         </div>
       </div>
-      <Modal open={open} setOpen={setOpen} products={products} />
+      <Modal open={open} setOpen={setOpen} products={products} setOpenProduct={setOpenProduct} />
     </header>
   );
 }
