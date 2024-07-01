@@ -146,6 +146,7 @@ export function Navbar() {
                               {products.map((item) =>
                                 <li className='text-start'>
                                   <Link href={`/product/details?id=${item.id}`}
+                                    onClick={() => setOpenProduct(!openProduct)}
                                     className='hover:text-[#007bff] font-semibold  whitespace-nowrap  text-[#333] block text-[15px]'>
                                     {item.name}
                                   </Link>
@@ -160,7 +161,7 @@ export function Navbar() {
               </Transition.Root>
             </li>
             <li className='max-lg:border-b max-lg:py-2'>
-              <Link href={'/'}
+              <Link href={'/certification'}
                 className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
                 Certification
               </Link>
@@ -183,7 +184,7 @@ export function Navbar() {
               </Link>
             </li>
             <li className='max-lg:border-b max-lg:py-2'>
-              <Link href='/'
+              <Link href='/gallery'
                 className='hover:text-[#007bff] font-semibold text-[#333] block text-[15px]'>
                 Gallery
               </Link>

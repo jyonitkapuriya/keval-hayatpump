@@ -60,7 +60,7 @@ const Product = () => {
                                                         alt={item.name}
                                                         width={768}
                                                         height={768}
-                                                        className="w-32 h-32 lg:w-40 lg:h-40"
+                                                        className="w-auto h-auto max-w-32 max-h-32 "
                                                     />
                                                 </div>
                                                 <CardBody className="p-0 flex flex-col items-center justify-center">
