@@ -55,14 +55,14 @@ export const Expertise = [
         icon: BOOSTING_SYSTEM,
         name: 'COOLING & PRESSURE BOOSTING SYSTEM',
     },
-    {
-        icon: HOTELS_AND_MALLS,
-        name: 'HOTELS & MALLS',
-    },
-    {
-        icon: USE_IN_TILES,
-        name: 'USE IN TILES & MARBLE PLANT',
-    },
+    // {
+    //     icon: HOTELS_AND_MALLS,
+    //     name: 'HOTELS & MALLS',
+    // },
+    // {
+    //     icon: USE_IN_TILES,
+    //     name: 'USE IN TILES & MARBLE PLANT',
+    // },
     // {
     //     icon: MUD_APPLICATION,
     //     name: 'USE IN MUD APPLICATION',

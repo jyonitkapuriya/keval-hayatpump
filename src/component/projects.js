@@ -2,11 +2,12 @@
 
 import { ProjectCard } from "./project-card";
 import { Typography } from "@material-tailwind/react";
-import Pupm1 from '../images/pums/newPump.png';
-import Pupm2 from '../images/pums/newMotors.png'
+import Pupm1 from '../images/pums/newPump.jpeg';
+import Pupm2 from '../images/pums/newMotors.jpeg'
 import Pupm3 from '../images/pums/solar-pump.png'
-import Pupm4 from '../images/pums/HorizontalPump.png'
-import Pupm5 from '../images/pums/UPVC.png'
+import Pupm4 from '../images/pums/HorizontalPump.jpeg'
+import Pupm5 from '../images/pums/UPVC.jpeg'
+import Pupm6 from '../images/pums/cable.jpeg'
 import banner from '../images/pums/bgtest.png'
 import bgImage from '../images/water.gif'
 import Image from "next/image";
@@ -42,6 +43,12 @@ const PROJECTS = [
     type: "upvc_pumps",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
+  {
+    img: Pupm6,
+    title: "Cable",
+    type: "cable",
+    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+  },
 
 ];
 
@@ -64,7 +71,7 @@ export function Projects() {
         </div>
         <div className="container mx-auto grid grid-cols-1 w-fit gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
           {PROJECTS.map((props, idx) => (
-            <div key={idx} className="border-2 border-solid border-blue-400 p-8 rounded-lg shadow-xl cardBox">
+            <div key={idx} className="border-2 border-solid border-blue-400 p-8 rounded-lg shadow-xl ">
               <ProjectCard key={idx} {...props} />
             </div>
           ))}
