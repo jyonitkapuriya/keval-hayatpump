@@ -48,7 +48,7 @@ h2 {
 p {
   font-size: 4rem;
   opacity: 0;
-  animation: fadeInText 2s ease forwards 3s;
+  animation: fadeInText 0.5s ease forwards 1s;
 }
 
 .intro {
@@ -70,7 +70,7 @@ main {
   align-items: center;
   background-color: mistyrose;
   transform: scale(0, 0);
-  animation: animate 1s ease-in forwards 2s;
+  animation: animate 0.5s ease-in forwards 1s;
   overflow: hidden;
 }
 
