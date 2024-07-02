@@ -109,6 +109,7 @@ const AddPump = () => {
                 <option value="solar_motor">Solar Motor</option>
                 <option value="horizonatal_openwell_pumps">Horizonatal Openwell Pumps</option>
                 <option value="upvc_pumps">UPVC Pumps</option>
+                <option value="cable">Cable</option>
             </select>
             <button
                 className="w-full md:w-auto mt-5 bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-2 px-4 border border-gray-300 rounded-lg shadow-sm"
