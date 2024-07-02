@@ -52,7 +52,7 @@ const Product = () => {
                             {product.map((item, index) => {
                                 return (
                                     <div key={index} className="border-2  border-solid lg:col-span-2 md:col-span-3 col-span-6 border-blue-400 p-8 rounded-lg shadow-xl">
-                                        <div className="card">
+                                        <div className="">
                                             <Card color="transparent" shadow={false} style={{ position: 'initial' }}>
                                                 <div className="mx-auto mt-0 ">
                                                     <Image
