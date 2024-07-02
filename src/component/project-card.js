@@ -13,7 +13,7 @@ export function ProjectCard({ img, title, desc, type }) {
   console.log("key", type)
   const router = useRouter()
   return (
-    <div className="card">
+    <div className="">
       <Card color="transparent" shadow={false} style={{ position: 'initial' }}>
         <div className="mx-auto mt-0 ">
           <Image

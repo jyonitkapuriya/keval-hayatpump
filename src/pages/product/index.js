@@ -51,7 +51,7 @@ const Product = () => {
                         <div className="  mt-16 lg:max-w-7xl mx-auto w-fit sm:px-8 grid grid-cols-6 gap-8">
                             {product.map((item, index) => {
                                 return (
-                                    <div key={index} className="border-2 cardBox border-solid lg:col-span-2 md:col-span-3 col-span-6 border-blue-400 p-8 rounded-lg shadow-xl">
+                                    <div key={index} className="border-2  border-solid lg:col-span-2 md:col-span-3 col-span-6 border-blue-400 p-8 rounded-lg shadow-xl">
                                         <div className="card">
                                             <Card color="transparent" shadow={false} style={{ position: 'initial' }}>
                                                 <div className="mx-auto mt-0 ">
