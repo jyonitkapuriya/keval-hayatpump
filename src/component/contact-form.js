@@ -79,10 +79,9 @@ export function ContactForm() {
                 variant="lead"
                 className="mx-auto mb-8 text-base !text-white"
               >
-                SILVER CONSUMER ELECTRICALS PRIVATE LIMITED
-                Survey No. 36-47, Village Haripar (Taravada),
-                Taluka : Lodhika, District : Rajkot,
-                Pin - 360035, Gujarat, India
+                HAYAT PUMPS PRIVATE LIMITED
+                LOTHADA PLOT 11-12, SHREE RAM IND, VADALIA, FRUD VALO ROAD, LOTHADA, RAJKOT - 360024,
+                GUJRAT, INDIA
               </Typography>
               <div className="flex gap-5">
                 <PhoneIcon className="h-6 w-6 text-white" />

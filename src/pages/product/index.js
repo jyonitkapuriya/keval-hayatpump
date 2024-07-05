@@ -60,10 +60,10 @@ const Product = () => {
                                                         alt={item.name}
                                                         width={768}
                                                         height={768}
-                                                        className="w-auto h-auto max-w-32 max-h-32 "
+                                                        className="w-auto h-auto max-w-44 max-h-44 "
                                                     />
                                                 </div>
-                                                <CardBody className="p-0 flex flex-col items-center justify-center">
+                                                <CardBody className="p-0 flex flex-col items-center mt-3 justify-center">
                                                     <a
                                                         href="#"
                                                         className="text-blue-gray-900 transition-colors hover:text-gray-800"
