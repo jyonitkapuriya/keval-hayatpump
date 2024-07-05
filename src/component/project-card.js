@@ -24,7 +24,7 @@ export function ProjectCard({ img, title, desc, type }) {
             className="w-auto md:h-40 sm:h-36 h-32 lg:w-auto lg:h-44"
           />
         </div>
-        <CardBody className="p-0 flex flex-col items-center justify-center">
+        <CardBody className="p-0 flex flex-col items-center justify-center mt-3">
           <a
             href="#"
             className="text-blue-gray-900 transition-colors hover:text-gray-800"
