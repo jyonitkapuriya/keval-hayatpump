@@ -21,7 +21,7 @@ export function ProjectCard({ img, title, desc, type }) {
             alt={title}
             width={768}
             height={768}
-            className="w-32 h-32 lg:w-40 lg:h-40"
+            className="w-auto md:h-40 sm:h-36 h-32 lg:w-auto lg:h-44"
           />
         </div>
         <CardBody className="p-0 flex flex-col items-center justify-center">
