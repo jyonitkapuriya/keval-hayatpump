@@ -50,17 +50,19 @@ const PumpDetails = () => {
                 <div className="relative">
                     <Navbar />
                     <div className=" gap-5 max-w-7xl  px-8 mx-auto mt-40 mb-20  grid grid-cols-2 justify-center flex-wrap">
-                        {pumpData?.productImageURL && <div className=" rounded-lg "><Image src={pumpData?.productImageURL} width={200} height={200} className="w-auto rounded-lg  max-h-[500px] h-full " /></div>}
-                        {/* {pumpData?.specificationImgURL && <Image src={pumpData?.specificationImgURL} width={200} height={200} className="w-full max-h-[500px] h-full" />} */}
+                        <div className="flex justify-center col-span-2  md:col-span-1">
+                            {pumpData?.productImageURL && <div className=" rounded-lg "><Image src={pumpData?.productImageURL} width={200} height={200} className="w-auto rounded-lg mx-auto max-h-[500px] h-full " /></div>}
+                        </div>{/* {pumpData?.specificationImgURL && <Image src={pumpData?.specificationImgURL} width={200} height={200} className="w-full max-h-[500px] h-full" />} */}
                         <div className="p-4 rounded-lg border-2 h-[400px] overflow-y-scroll border-solid border-blue-400 bg-blue-50 shadow-md col-span-2 max-w-1/2 md:col-span-1 ">
-                            <div className="flex gap-x-1 text-xs flex-wrap text-gray-700 font-sans font-medium  border-b border-solid border-gray-500 border-opacity-50 ">{feature.map((item) => {
+                            <div className="flex  md:text-sm text-xs gap-3 pb-2 flex-wrap text-gray-700 font-sans font-medium  border-b border-solid border-gray-500 border-opacity-50 ">{feature.map((item) => {
                                 return (
                                     <div className={`cursor-pointer hover:text-white hover:bg-blue-400 p-1 rounded-md duration-300 ${selectedFeature === item.key ? "bg-blue-400 text-white" : ""}`}
                                         onClick={() => setSelectedFeature(item.key)} >
                                         {item.title}
                                     </div>
                                 )
-                            })}</div>
+                            })}
+                            </div>
                             {pumpData?.feature?.[selectedFeature] && <div dangerouslySetInnerHTML={{ __html: pumpData?.feature[selectedFeature] }} className="mt-1  pt-2 md:text-xs text-sm text-gray-500 font-sans font-normal" >
                                 {/* {pumpData.feature[selectedFeature]} */}
                             </div>}
@@ -115,7 +117,7 @@ const PumpDetails = () => {
                         })}
                     </div>
 
-                    <ContactForm />
+                    {/* <ContactForm /> */}
                     <Footer />
                 </div>
             </div>
