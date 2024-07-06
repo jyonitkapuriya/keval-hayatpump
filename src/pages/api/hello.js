@@ -54,8 +54,8 @@ const handler = async (req, res) => {
     try {
       const response = await novu.trigger(templateId, {
         to: {
-          subscriberId: "taunnawullabe-9833@yopmail.com", // Use the recipient from the request body
-          email: 'taunnawullabe-9833@yopmail.com'
+          subscriberId: "info@hayatpump.com", // Use the recipient from the request body
+          email: 'info@hayatpump.com'
 
         },
         payload: payload,
