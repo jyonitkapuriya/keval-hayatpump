@@ -7,7 +7,7 @@ const LeafletMap = () => {
     return (
         <>
 
-            <div className='px-8 max-w-7xl mx-auto gap-8 flex flex-col overflow-hidden  border-t border-solid border-gray-700 border-opacity-35 py-10'>
+            <div className='px-8 max-w-7xl mx-auto gap-8 flex flex-col overflow-hidden  border-t border-solid border-gray-700 border-opacity-35 py-20'>
                 <div className=" animate-pulse lg:text-8xl text-5xl  font-sans font-semibold flex item-center justify-center" style={{ color: '#07aadb' }}>
                     Location
                 </div>
