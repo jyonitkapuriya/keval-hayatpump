@@ -163,6 +163,9 @@ const AddDetails = () => {
                 <div className="h-screen w-full bg-white overflow-scroll no-scrollbar">
                     <Navbar />
                     <div className="pt-20 px-8 bg-white">
+                        <div onClick={() => router.push('/admin/addpump')} className="mb-20 text-lg">
+                            {'<'} Back
+                        </div>
                         <div className="flex">
                             <div className="w-1/2">Product Image</div>
                             <Delete className="ml-5 text-white" />
@@ -386,7 +389,7 @@ const AddDetails = () => {
                         </table>
                     </div>
                 </div>
-            </RootLayout>
+            </RootLayout >
         )
     }
 

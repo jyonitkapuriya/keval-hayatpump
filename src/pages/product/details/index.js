@@ -49,14 +49,17 @@ const PumpDetails = () => {
             <div className="expert overflow-scroll no-scrollbar h-screen w-full lg:px-0 ">
                 <div className="relative">
                     <Navbar />
-                    <div className=" gap-5 max-w-7xl  px-8 mx-auto mt-40 mb-20  grid grid-cols-2 justify-center flex-wrap">
+                    <div className="pt-32 px-8 flex justify-center mb-8 animate-pulse lg:text-8xl md:text-5xl text-2xl  font-sans font-semibold" style={{ color: '#07aadb' }}>
+                        {pumpData?.name}
+                    </div>
+                    <div className=" gap-5 max-w-7xl  px-8 mx-auto md:mt-40 mt-20 mb-20  grid grid-cols-2 justify-center flex-wrap">
                         <div className="flex justify-center col-span-2  md:col-span-1">
                             {pumpData?.productImageURL && <div className=" rounded-lg "><Image src={pumpData?.productImageURL} width={200} height={200} className="w-auto rounded-lg mx-auto max-h-[500px] h-full " /></div>}
                         </div>{/* {pumpData?.specificationImgURL && <Image src={pumpData?.specificationImgURL} width={200} height={200} className="w-full max-h-[500px] h-full" />} */}
                         <div className="p-4 rounded-lg border-2 h-[400px] overflow-y-scroll border-solid border-blue-400 bg-blue-50 shadow-md col-span-2 max-w-1/2 md:col-span-1 ">
                             <div className="flex  md:text-sm text-xs gap-3 pb-2 flex-wrap text-gray-700 font-sans font-medium  border-b border-solid border-gray-500 border-opacity-50 ">{feature.map((item) => {
                                 return (
-                                    <div className={`cursor-pointer hover:text-white hover:bg-blue-400 p-1 rounded-md duration-300 ${selectedFeature === item.key ? "bg-blue-400 text-white" : ""}`}
+                                    <div className={`cursor-pointer hover:text-white hover:bg-blue-400 font-semibold p-1 rounded-md duration-300 ${selectedFeature === item.key ? "bg-blue-400 text-white" : ""}`}
                                         onClick={() => setSelectedFeature(item.key)} >
                                         {item.title}
                                     </div>

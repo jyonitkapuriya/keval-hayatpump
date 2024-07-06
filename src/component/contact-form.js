@@ -14,7 +14,11 @@ import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { Novu } from '@novu/node';
 import { toast } from "react-toastify";
+import Cors from 'cors';
 
+const cors = Cors({
+  methods: ['POST', 'GET', 'HEAD'],
+});
 export function ContactForm() {
   const [formData, setFormData] = useState({})
   const novu = new Novu('1fc5f14ed8b3a4c442eded5cea80e0d1');
@@ -26,20 +30,39 @@ export function ContactForm() {
 
   const submit = async (e) => {
     e.preventDefault()
+    const payload = {
+      templateId: 'onboarding-workflow',
+      payload: {
+        formData,
+      },
+    };
     try {
-      await novu.trigger('onboarding-workflow', {
-        to: {
-          subscriberId: '66306f2283064b959c5854b2',
-          email: 'kapuriyajyonit755@gmail.com'
+      const response = await fetch('/api/hello', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        // payload: {
-        //   fName: formData.fName,
-        //   lName: formData.lName,
-        //   email: formData.email,
-        //   number: formData.number,
-        //   message: formData.message,
-        // }
+        body: JSON.stringify(payload),
       });
+
+      if (response.ok) {
+        console.log('Notification sent successfully');
+      } else {
+        console.error('Failed to send notification');
+      }
+      // await novu.trigger('onboarding-workflow', {
+      //   to: {
+      //     subscriberId: '66306f2283064b959c5854b2',
+      //     email: 'kapuriyajyonit755@gmail.com'
+      //   },
+      // payload: {
+      //   fName: formData.fName,
+      //   lName: formData.lName,
+      //   email: formData.email,
+      //   number: formData.number,
+      //   message: formData.message,
+      // }
+      // });
       toast.success("Mail send successfully!");
     }
     catch (err) {
