@@ -7,16 +7,16 @@ const LeafletMap = () => {
     return (
         <>
 
-            <div className='px-8 max-w-7xl mx-auto gap-8 flex flex-col overflow-hidden  border-t border-solid border-gray-700 border-opacity-35 py-20'>
-                <div className="mb-8 animate-pulse lg:text-8xl text-5xl  font-sans font-semibold flex item-center justify-center" style={{ color: '#07aadb' }}>
+            <div className='px-8 max-w-7xl mx-auto gap-8 flex flex-col overflow-hidden  border-t border-solid border-gray-700 border-opacity-35 py-10'>
+                <div className=" animate-pulse lg:text-8xl text-5xl  font-sans font-semibold flex item-center justify-center" style={{ color: '#07aadb' }}>
                     Location
                 </div>
-                <Typography
+                {/* <Typography
                     variant="lead"
                     className="mx-auto w-full lg:w-5/12 !text-gray-500"
                 >
                     Our office is located at 123 Street, City, Country. Feel free to drop by during our business hours.
-                </Typography>
+                </Typography> */}
             </div>
 
             <div className='px-8'>

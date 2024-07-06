@@ -4,11 +4,11 @@ import { ProjectCard } from "./project-card";
 import { Typography } from "@material-tailwind/react";
 import Pupm1 from '../images/pums/newPump.jpeg';
 import Pupm2 from '../images/pums/newMotors.jpeg'
-import Pupm3 from '../images/pums/solar-pump.png'
+import Pupm3 from '../images/pums/solar-pump.jpeg'
 import Pupm4 from '../images/pums/HorizontalPump.jpeg'
 import Pupm5 from '../images/pums/UPVC.jpeg'
 import Pupm6 from '../images/pums/cable.jpeg'
-import banner from '../images/pums/bgtest.png'
+import banner from '../images/pums/bgtest.jpg'
 import bgImage from '../images/water.gif'
 import Image from "next/image";
 
@@ -69,16 +69,16 @@ export function Projects() {
             dreams into reality.
           </Typography>
         </div>
-        <div className="container mx-auto grid grid-cols-1 w-fit gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
+        <div className="container mx-auto grid grid-cols-1 w-full max-w-7xl gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
           {PROJECTS.map((props, idx) => (
-            <div key={idx} className="border-2 border-solid border-blue-400 p-8 rounded-lg shadow-xl ">
+            <div key={idx} className="border-2 border-solid border-blue-400 hover:scale-105 duration-300 hover:shadow-lg p-8 rounded-lg shadow-xl ">
               <ProjectCard key={idx} {...props} />
             </div>
           ))}
         </div>
       </section>
       <div className=" w-full">
-        <Image src={banner} className="max-h-full w-full" />
+        <Image src={banner} className="h-full w-full" />
       </div>
     </>
   );

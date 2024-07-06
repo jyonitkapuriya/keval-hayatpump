@@ -48,7 +48,7 @@ const Product = () => {
                         {/* <div className="flex flex-wrap justify-center text-gray-400 font-normal text-sm">
                             <span onClick={() => router.push("/")} className="mr-3">Product</span> / <span className="ml-3">{convertName(type.replace(/_/g, ''))}</span>
                         </div> */}
-                        <div className="  mt-16 lg:max-w-7xl mx-auto w-fit sm:px-8 grid grid-cols-6 gap-8">
+                        <div className="  mt-16 lg:max-w-7xl mx-auto w-full px-4 sm:px-8 grid grid-cols-6 gap-8">
                             {product.map((item, index) => {
                                 return (
                                     <div key={index} className="border-2  border-solid lg:col-span-2 md:col-span-3 col-span-6 border-blue-400 p-8 rounded-lg shadow-xl">
@@ -60,7 +60,7 @@ const Product = () => {
                                                         alt={item.name}
                                                         width={768}
                                                         height={768}
-                                                        className="w-auto h-auto max-w-44 max-h-44 "
+                                                        className="w-auto h-auto  max-h-52 "
                                                     />
                                                 </div>
                                                 <CardBody className="p-0 flex flex-col items-center mt-3 justify-center">
@@ -68,7 +68,7 @@ const Product = () => {
                                                         href="#"
                                                         className="text-blue-gray-900 transition-colors hover:text-gray-800"
                                                     >
-                                                        <Typography variant="h5" className="mb-2">
+                                                        <Typography variant="h6" className="mb-2">
                                                             {item.name}
                                                         </Typography>
                                                     </a>

@@ -129,7 +129,7 @@ export function Navbar() {
                   </Transition.Child>
 
                   <div className="fixed inset-0 z-10 overflow-y-auto    ">
-                    <div className="flex  items-end justify-center  text-center w-[165px] ml-[calc(13%-105px)]  sm:items-center ">
+                    <div className="flex  items-end justify-center  text-center w-fit ml-[calc(13%-105px)]  sm:items-center ">
                       <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"
